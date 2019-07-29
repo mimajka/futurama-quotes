@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  .mat-icon {
+    font-size: 10rem;
+  }
+  .error-title {
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+  }
+  p {
+    padding-bottom: 0.2rem;
+  }
+}

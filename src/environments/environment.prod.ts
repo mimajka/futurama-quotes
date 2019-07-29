@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  charactersUrl: 'http://futuramaapi.herokuapp.com/api/characters/'
 };

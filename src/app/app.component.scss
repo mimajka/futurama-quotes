@@ -1,0 +1,15 @@
+header {
+  mat-toolbar {
+    padding: 0 30px;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 1220px;
+  margin: auto;
+  min-height: calc(100vh - 64px);
+}

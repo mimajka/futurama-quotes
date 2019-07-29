@@ -1,0 +1,16 @@
+<div class="modal-container">
+  <h1 mat-dialog-title class="modal-title">
+    More quotes by {{data.name}}
+    <mat-icon aria-hidden="false" aria-label="Close" (click)="closeModal()">clear</mat-icon>
+  </h1>
+  <mat-dialog-content class="quotes-container">
+    <div *ngIf="quotes$ | async as quotes; else loading" class="quote-list">
+      <app-quote *ngFor="let quote of quotes" [quote]="quote"></app-quote>
+    </div>
+    <ng-template #loading>
+      <div class="spinner-container">
+        <mat-spinner></mat-spinner>
+      </div>
+    </ng-template>
+  </mat-dialog-content>
+</div>
